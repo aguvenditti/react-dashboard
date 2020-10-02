@@ -1,23 +1,15 @@
-# Entregable APIs
-
-## Agustín Venditti
+# APIs
 
 ### Consignas / Endpoints
 
-### Para la tabla movies
-* Obtener todos los registros - http://localhost:3000/movies
-* Obtener un registro - http://localhost:3000/movies/7 - (cualquier id)
-* Crear un nuevo registro - http://localhost:3000/movies/create
+### Para la productos
+* Obtener todos los productos - http://localhost:3001/products
+* Cantidad total de productos - http://localhost:3001/products/quantity
+* Suma total de precios - http://localhost:3001/products/price
+* Ultimo producto creado - http://localhost:3001/products/last
+* Todas las categorias - http://localhost:3001/products/categories
 
-### Para la tabla series
-* Obtener todos los registros - http://localhost:3000/series
-* Obtener un registro - http://localhost:3000/series/7 - (cualquier id)
-* Crear un nuevo registro - http://localhost:3000/series/create
+### Para usuarios
+* Catidad de usuarios - http://localhost:3001/users/quantity
 
-## Aclaraciones
 
-### Para testear creates, pasar:
-* Movies: (title, rating, awards, release_date, length)
-* Series: (title, release_date, end_date)
-
-### Tests completos!
