@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 class MainCard extends Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = {
             error: null,
             isLoaded: false,
             props: props,
             value: 5
-        }
+        };
     };
 
     componentDidMount() {

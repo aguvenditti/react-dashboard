@@ -8,7 +8,7 @@ function CategoriesInDb(props) {
                 <div key={item+i} className="col-lg-6 mb-4">
                     <div className="card bg-info text-white shadow">
                         <div className="card-body">
-                            {item}
+                            {item.name}
                         </div>
                     </div>
                 </div>

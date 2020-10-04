@@ -12,7 +12,7 @@ function TableItem(props) {
                     <td>
                         <ul>
                             {item.categories.map((cat,i) => 
-                                <li key={cat+i}>{cat}</li>
+                                <li key={cat+i}>{cat.name}</li>
                             )}
                         </ul>
                     </td>
@@ -20,7 +20,7 @@ function TableItem(props) {
                         <ul>
 
                             {item.colors.map((color,i) => 
-                                <li key={color+i}><span className={color.className}>{color.name}</span></li>
+                                <li key={color+i}><span style={{color: color.code}}>{color.name}</span></li>
                             )}
                             
                         </ul>

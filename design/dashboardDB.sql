@@ -51,6 +51,7 @@ DROP TABLE IF EXISTS `colors`;
 CREATE TABLE `colors` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(500) NOT NULL,
+  `code` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -61,7 +62,7 @@ CREATE TABLE `colors` (
 
 LOCK TABLES `colors` WRITE;
 /*!40000 ALTER TABLE `colors` DISABLE KEYS */;
-INSERT INTO `colors` VALUES (1,'azul'),(2,'rojo'),(3,'amarillo'),(4,'verde'),(5,'negro');
+INSERT INTO `colors` VALUES (1,'azul','#0000FF'),(2,'rojo','#FF0000'),(3,'amarillo','#ffff00'),(4,'verde','#008000'),(5,'negro','#000000');
 /*!40000 ALTER TABLE `colors` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -148,7 +149,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'prueba1',14.0,'primer product','2020-10-02 15:15:30.639137',50.0,NULL),(2,'prueba2',55.0,'segundo producto','2020-10-02 15:15:30.639829',80.0,NULL),(3,'prueba3',80.0,'tercer producto','2020-10-02 15:55:07.227318',180.0,NULL);
+INSERT INTO `products` VALUES (1,'prueba1',14.0,'primer producto','2020-10-04 21:43:38.458959',50.0,NULL),(2,'prueba2',55.0,'segundo producto','2020-10-02 15:15:30.639829',80.0,NULL),(3,'prueba3',80.0,'tercer producto','2020-10-02 15:55:07.227318',180.0,NULL);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,4 +186,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-02 12:58:29
+-- Dump completed on 2020-10-04 18:45:59
