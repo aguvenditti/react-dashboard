@@ -29,7 +29,7 @@ let mainCards = [
 ];
 
 
-function MainContainer(props) {
+function MainContainer() {
     return (
         <div className="container-fluid">
 
