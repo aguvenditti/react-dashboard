@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function NavItem(props) {
     return (
         <li className={props.mainClassName}>
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to={props.link}>
 					<i className={props.iconClassName} ></i>
                     <span>{props.mainText}</span>
-                </a>
+                </Link>
         </li>
     );
 }

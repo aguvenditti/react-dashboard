@@ -7,7 +7,7 @@ class MainCard extends Component {
             error: null,
             isLoaded: false,
             props: props,
-            value: 5
+            value: ''
         };
     };
 
@@ -31,7 +31,7 @@ class MainCard extends Component {
     };
 
     render() {
-        const { error, isLoaded, value } = this.state;
+        const { error, isLoaded } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
